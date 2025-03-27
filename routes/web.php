@@ -13,3 +13,7 @@ Route::get("/benvenuto", function () {
 Route::get("/arrivederci", function () {
     return view("arrivederci");
 });
+
+Route::get("/laravel", function () {
+    return view("welcome");
+});
