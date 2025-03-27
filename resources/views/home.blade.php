@@ -10,9 +10,9 @@
 <body>
     <header>
         <nav>
-            <a href="/laravel">Pagina Laravel</a>
-            <a href="/benvenuto">Fatti salutare bello!</a>
-            <a href="/arrivederci">Devi andare via?</a>
+            <a href="{{route("home_laravel")}}">Pagina Laravel</a>
+            <a href="{{route("benvenuto")}}">Fatti salutare bello!</a>
+            <a href="{{route("bye")}}">Devi andare via?</a>
         </nav>
     </header>
     <div style="margin: 50px auto 0; text-align: center;">
@@ -20,7 +20,7 @@
         <h3>Sono completamente scritto in ".blade"</h3>
         <br>
         <h5>Se mi fornisci il tuo nome, possiamo personalizzare il saluto!</h5>
-        <form action="./benvenuto" method="GET">
+        <form action="{{route("benvenuto")}}" method="GET">
             <label for="">Inserisci un nome</label>
             <input type="text" name="nome_user">
             <button type="submit">Genera il saluto!</button>

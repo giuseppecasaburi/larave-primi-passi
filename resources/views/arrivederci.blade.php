@@ -10,7 +10,7 @@
 
 <body>
     <h1>Alla prossima fratello</h1>
-    <button><a href="/">Torna in home</a></button>
+    <button><a href="{{route("home")}}">Torna in home</a></button>
 </body>
 
 </html>
