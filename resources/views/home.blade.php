@@ -10,12 +10,12 @@
 <body>
     <header>
         <nav>
-            <a href="{{route("home_laravel")}}">Pagina Laravel</a>
-            <a href="{{route("benvenuto")}}">Fatti salutare bello!</a>
-            <a href="{{route("bye")}}">Devi andare via?</a>
+            <a href="{{route("home_laravel")}}">{{$laravel}}</a>
+            <a href="{{route("benvenuto")}}">{{$benvenuto}}</a>
+            <a href="{{route("bye")}}">{{$bye}}</a>
         </nav>
     </header>
-    <div style="margin: 50px auto 0; text-align: center;">
+    <div class="saluto">
         <h1>Ciao, io sono Home</h1>
         <h3>Sono completamente scritto in ".blade"</h3>
         <br>
